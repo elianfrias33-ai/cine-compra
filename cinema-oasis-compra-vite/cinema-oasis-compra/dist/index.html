@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cinema Oasis Bonao | Compra de boletos (demo)</title>
+<meta name="description" content="Cinema Oasis, el cine de Bonao. Cartelera, horarios, tráileres, miércoles 2x1 y estrenos. 4to piso de Oasis Mall.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Cinema Oasis Bonao">
+<meta property="og:description" content="Cartelera, horarios y estrenos. Miércoles 2x1. 4to piso de Oasis Mall, Bonao.">
+<meta property="og:type" content="website">
+<link rel="icon" href="https://cinemaoasisbonao.com/images/CinemaOasis_logowebp.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("anim")</script>
+  <script type="module" crossorigin src="./assets/index-E3VK14nh.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-SqlEmY-y.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#inicio"><img src="https://cinemaoasisbonao.com/images/CinemaOasis_logowebp.webp" alt="Cinema Oasis"></a>
+    <nav class="menu"><a href="#cartelera">Cartelera</a><a href="#boletos">Boletos</a><a href="#proximamente">Próximamente</a><a href="#ubicacion">Ubicación</a></nav>
+    <div class="hright">
+      <button class="btn btn-red" data-buy="0">Comprar<span class="hide-sm"> boletos</span></button>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mnav" id="mnav"><a href="#cartelera">Cartelera</a><a href="#boletos">Boletos</a><a href="#proximamente">Próximamente</a><a href="#ubicacion">Ubicación</a></nav>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <!-- Izquierda: información del cine -->
+    <div class="about">
+      <span class="kick">Bienvenidos a</span>
+      <h1 class="t"><span class="r">Cinema</span> <span class="g">Oasis</span></h1>
+      <p class="lead">El cine de Bonao. Estrenos cada semana, matinés para toda la familia los fines de semana y la mejor experiencia en pantalla grande, en el 4to piso de Oasis Mall.</p>
+      <div class="stats">
+        <div class="stat"><b class="t r">2x1</b><span>Todos los miércoles</span></div>
+        <div class="stat"><b class="t">6:00 PM</b><span>Martes a viernes</span></div>
+        <div class="stat"><b class="t g">4:30 PM</b><span>Sábados y domingos</span></div>
+      </div>
+      <div class="acts">
+        <a class="btn btn-red" href="#cartelera">Ver cartelera</a>
+        <a class="btn btn-out" href="#ubicacion">Cómo llegar</a>
+      </div>
+    </div>
+    <!-- Derecha: película destacada -->
+    <div class="feat">
+      <div class="player" id="player">
+        <div class="cover" id="cover">
+          <div class="bgp"></div>
+        </div>
+      </div>
+      <div class="fbody">
+        <div class="frow"><span class="badge" id="hBadge">Estreno</span><span class="meta" id="hMeta"></span></div>
+        <h2 class="t" id="hTitle"></h2>
+        <p class="syn" id="hSyn"></p>
+        <div class="fwhen"><span>Funciones: <b id="hDays"></b></span><span>Hora: <b id="hTime"></b></span></div>
+        <div class="acts">
+          <button class="btn btn-red" data-buy="0">🎟️ Comprar boletos</button>
+          <button class="btn btn-out" id="hTrailer">▶ Ver tráiler</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="cartelera">
+  <div class="wrap">
+    <div class="sh"><div><div class="bar"></div><h2 class="t">En <span>cartelera</span></h2></div><p>Toca una película para ver su resumen, el tráiler y reservar.</p></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section class="s" id="boletos">
+  <div class="wrap">
+    <div class="sh"><div><div class="bar"></div><h2 class="t">Bole<span>tos</span></h2></div><p>Martes a domingo. Lunes cerrado.</p></div>
+    <div class="tix">
+      <div class="tk"><h4>Entrada general</h4><div class="p">RD$300</div><p>Todas las funciones</p></div>
+      <div class="tk hl"><h4>Miércoles 2x1</h4><div class="p">2 por 1</div><p>Todas las películas, todas las funciones</p></div>
+      <div class="tk"><h4>Matiné</h4><div class="p">RD$250</div><p>Sábados y domingos, 5:00 PM</p></div>
+    </div>
+    <p class="note">* Precios de muestra para la demostración.</p>
+    <div class="tixcta"><button class="btn btn-red" data-buy="0">🎟️ Comprar en línea</button><span>Escoge tu asiento, paga con tarjeta y recibe tu boleto con código QR.</span></div>
+  </div>
+</section>
+
+<section class="s" id="proximamente">
+  <div class="wrap">
+    <div class="sh"><div><div class="bar"></div><h2 class="t">Próxi<span>mamente</span></h2></div><p>Los estrenos que vienen a Cinema Oasis.</p></div>
+    <div class="soon" id="soon"></div>
+  </div>
+</section>
+
+<section class="s" id="ubicacion">
+  <div class="wrap">
+    <div class="sh"><div><div class="bar"></div><h2 class="t">Ubica<span>ción</span></h2></div></div>
+    <div class="loc">
+      <div class="lb">
+        <h3>Cinema Oasis</h3>
+        <p class="addr">4to piso de Oasis Mall, Bonao, República Dominicana</p>
+        <div id="hours"></div>
+        <div class="acts">
+          <a class="btn btn-green" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Oasis+Mall+Bonao">Cómo llegar</a>
+          <a class="btn btn-out" target="_blank" rel="noopener" href="https://wa.me/18095016277">WhatsApp</a>
+        </div>
+      </div>
+      <div class="map"><iframe loading="lazy" title="Mapa Oasis Mall Bonao" src="https://www.google.com/maps?q=Oasis+Mall+Bonao&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Cinema Oasis Bonao</span>
+    <div class="lk">
+      <a target="_blank" rel="noopener" href="https://www.instagram.com/cinemaoasis/">Instagram</a>
+      <a target="_blank" rel="noopener" href="https://whatsapp.com/channel/0029VbA7BKeCnA7mCgYQ8D3t">Canal de WhatsApp</a>
+      <a href="mailto:cinemaoasis2010@gmail.com">Correo</a>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="modal">
+  <button class="close" id="close" aria-label="Cerrar">✕</button>
+  <div class="mb">
+    <div class="v" id="mv"></div>
+    <div class="f"><div><h4 id="mt"></h4><p id="mh"></p></div><a class="btn btn-red" id="mr" target="_blank" rel="noopener">Reservar</a><button class="btn btn-red" id="mbuy" style="display:none">Reservar boletos</button></div>
+  </div>
+</div>
+
+<!-- Detalle de película -->
+<div class="dt" id="dt">
+  <div class="dbox">
+    <button class="dclose" id="dClose" aria-label="Cerrar">✕</button>
+    <div class="dvid" id="dVid"></div>
+    <div class="dgrid">
+      <img class="dposter" id="dImg" alt="">
+      <div class="dinfo">
+        <span class="badge" id="dTag"></span>
+        <h3 class="t" id="dTitle"></h3>
+        <p class="dmeta" id="dMeta"></p>
+        <p class="dsyn" id="dSyn"></p>
+        <div class="dwhen" id="dWhen"></div>
+        <div class="acts">
+          <button class="btn btn-out" id="dTrailer">▶ Ver tráiler</button>
+          <a class="btn btn-red" id="dCta" target="_blank" rel="noopener"></a><button class="btn btn-red" id="dBuy" style="display:none">Comprar boletos</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Compra de boletos -->
+<div class="co" id="co">
+  <div class="box">
+    <div class="tophd"><h3>Comprar boletos</h3><button class="x" id="coX" aria-label="Cerrar">✕</button></div>
+    <div class="demo-note">Modo demostración: así se vería la compra en línea. No se cobra nada ni se envía ningún dato.</div>
+    <div class="steps" id="steps"><div>1. Función</div><div>2. Boletos</div><div>3. Asientos</div><div>4. Pago</div></div>
+    <div class="cogrid">
+      <div class="pane" id="pane"></div>
+      <aside class="sum" id="sum"></aside>
+    </div>
+  </div>
+  <div class="nav2"><div class="in">
+    <div class="tt"><small id="navInfo">Total</small><b id="navTot">RD$0</b></div>
+    <div class="bb"><button class="btn btn-out" id="back">Atrás</button><button class="btn btn-red" id="next">Continuar</button></div>
+  </div></div>
+</div>
+</body>
+</html>
